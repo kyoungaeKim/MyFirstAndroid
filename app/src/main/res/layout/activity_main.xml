@@ -9,18 +9,30 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="치킨 먹고싶당"
+        android:layout_weight="3.35"
+        android:layout_height="0dp"
+        android:text="치킨 먹고싶다"
         android:background="#673AB7"
         android:textSize="45sp"
         android:textColor="#000000" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:scaleType="center"
-        android:src="@drawable/aa" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:text="치킨 먹고싶다"
+        android:background="#673AB7"
+        android:textSize="45sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="치킨 먹고싶다"
+        android:background="#673AB7"
+        android:textSize="45sp"
+        android:textColor="#000000" />
 
 
     <!-- 일반 뷰는 다른 뷰를 담을 수 없기 때문에 뷰 끝날때 /> 쓴다.-->
