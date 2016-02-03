@@ -12,8 +12,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@android:color/darker_gray"
+        android:background="#673AB7"
         android:textSize="45sp"
+        android:textColor="#000000"
         android:allowUndo="true" />
 
     <!-- 일반 뷰는 다른 뷰를 담을 수 없기 때문에 뷰 끝날때 /> 쓴다.-->
