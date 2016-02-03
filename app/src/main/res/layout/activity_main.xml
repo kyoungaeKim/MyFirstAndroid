@@ -1,44 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:weightSum="1">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:text="치킨"
-        android:layout_alignParentBottom="true"
-        android:background="#673AB7"
-        android:textSize="32sp"
-        android:textColor="#000000" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:text="치킨"
-        android:background="#673AB7"
-        android:textSize="32sp"
-        android:textColor="#000000" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:text="치킨"
-        android:background="#673AB7"
-        android:textSize="32sp"
-        android:textColor="#000000" />
+    android:layout_height="match_parent">
 
 
     <!-- 일반 뷰는 다른 뷰를 담을 수 없기 때문에 뷰 끝날때 /> 쓴다.-->
     <!--리니어 레이아웃은 뷰를 담기 때문에 </ LinearLayout>로 쓴다.-->
     <!--끝 태그는 /가 들어간다-->
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수원스마트"
+        android:textColor="#ffffff"
+        android:background="#d32f2f"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="왼쪽"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:layout_toLeftOf="@id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오른쪽"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textColor="#ffffff"
+        android:background="#37c0cc"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textColor="#ffffff"
+        android:background="#6d17ab"
+        android:id="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오른쪽"
+        android:id="@+id/textView6"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위쪽"
+        android:id="@+id/textView7"
+        android:layout_above="@id/textView4"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위쪽"
+        android:id="@+id/textView8"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/textView5"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aa"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="왼쪽"
+        android:id="@+id/textView9"
+        android:layout_toLeftOf="@id/textView5"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp" />
 </RelativeLayout>
