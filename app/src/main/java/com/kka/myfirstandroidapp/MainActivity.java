@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String TAG = MainActivity.class.getSimpleName();
 
@@ -20,15 +20,25 @@ public class MainActivity extends AppCompatActivity {
         // R 이 res 폴더 가리킴
         setContentView(R.layout.item_button);
 
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "클릭 완전 잘 됨", Toast.LENGTH_SHORT).show();
-            }
-        };
-
         Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(listener);
+        button2.setOnClickListener(this);
+//        button2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this, "클릭 완전 잘 됨", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+
+//        View.OnClickListener listener = new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this, "클릭 완전 잘 됨", Toast.LENGTH_SHORT).show();
+//            }
+//        };
+
+//        Button button2 = (Button) findViewById(R.id.button2);
+//        button2.setOnClickListener(listener);
     }
 
     // item_button.xml에 연결됨
