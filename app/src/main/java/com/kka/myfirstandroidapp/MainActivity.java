@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     //체크박스가 들어옴
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        Toast.makeText(MainActivity.this, "check : isChecked", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "check : " + isChecked, Toast.LENGTH_SHORT).show();
         if (isChecked) {
             mTextView.setVisibility(View.VISIBLE);
         } else {
