@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <CheckBox
         android:id="@+id/check_box"
@@ -11,28 +11,31 @@
         android:text="체크박스" />
 
     <TextView
-        android:visibility="invisible"
+        android:id="@+id/msg_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="체크됨"
-        android:id="@+id/msg_text_view" />
+        android:visibility="invisible" />
 
-    <EditText
-        android:id="@+id/name_edit_text"
-        android:hint="이름을 입력하세요"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/age_edit_text"
-        android:hint="나이를 입력하세요"
+    <TextView
+        android:id="@+id/name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:text="이름 :"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/age_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나이 :"
+        android:textSize="22sp" />
 
     <Button
-        android:id="@+id/Next_activity_button"
-        android:text="다음 Activity로 이동"
+
+        android:id="@+id/exit_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Activity 종료" />
+
 </LinearLayout>
