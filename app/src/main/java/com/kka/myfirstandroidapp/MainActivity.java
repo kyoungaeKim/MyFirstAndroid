@@ -85,20 +85,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
-    //결과를 처리
-    @Override//                          1000
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == REQUEST_CODE_PICTURE || resultCode == RESULT_OK || data!= null) {
+        if(requestCode == REQUEST_CODE_PICTURE || resultCode == RESULT_OK || data != null) {
             String result = data.getStringExtra("result");
             Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
-            //사진을 선택
-        }else if(requestCode== REQUEST_CODE_CAMERA) {
-            //사진찍어서 받을때 처리
+        }else if (requestCode == REQUEST_CODE_CAMERA) {
+
         }
     }
+
+    //결과를 처리
+//    @Override//                          1000
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if(requestCode == REQUEST_CODE_PICTURE || resultCode == RESULT_OK || data!= null) {
+//            String result = data.getStringExtra("result");
+//            Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+//            //사진을 선택
+//        }else if(requestCode== REQUEST_CODE_CAMERA) {
+//            //사진찍어서 받을때 처리
+//        }
+//    }
 
     // item_button.xml에 연결됨
    // public void onClick(View v) {
