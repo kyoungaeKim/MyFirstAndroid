@@ -85,17 +85,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == REQUEST_CODE_PICTURE || resultCode == RESULT_OK || data != null) {
-            String result = data.getStringExtra("result");
-            Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
-        }else if (requestCode == REQUEST_CODE_CAMERA) {
-
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if(requestCode == REQUEST_CODE_PICTURE || resultCode == RESULT_OK || data != null) {
+//            String result = data.getStringExtra("result");
+//            Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+//        }else if (requestCode == REQUEST_CODE_CAMERA) {
+//
+//        }setText(""+name);
+//    }
 
     //결과를 처리
 //    @Override//                          1000

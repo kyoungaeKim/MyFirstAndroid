@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.kka.myfirstandroidapp.exam.Main2Activity;
+import com.kka.myfirstandroidapp.exam_listView.ListViewActivity;
+import com.kka.myfirstandroidapp.exam_webView.WebViewActivity;
+
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -49,6 +53,10 @@ public class MainListActivity extends ListActivity {
         addItem(myData, "버튼 이벤트", MainActivity.class);
         addItem(myData, "ScrollView", ScrollActivity.class);
         addItem(myData, "암시적 인텐트", IntentActivity.class);
+        addItem(myData, "커피주문", Main2Activity.class);
+        addItem(myData, "webView 예제", WebViewActivity.class);
+        addItem(myData, "listView 예제", ListViewActivity.class);
+
         // ----- 메뉴 추가 여기까지
 
         // 이름 순 정렬
