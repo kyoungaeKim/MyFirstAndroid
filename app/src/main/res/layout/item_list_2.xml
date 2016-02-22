@@ -19,30 +19,23 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:id="@+id/title11"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ff6a00"
+            android:background="#388e3c"
             android:text="후라이드 반 양념 반"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="#ffffff" />
 
         <TextView
-            android:id="@+id/text1"
-            android:layout_width="wrap_content"
+            android:id="@+id/text11"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="담백한 후라이드"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             android:textColor="#000000" />
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="매콤달콤 양념"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-            android:textColor="#000000" />
 
     </LinearLayout>
 </LinearLayout>

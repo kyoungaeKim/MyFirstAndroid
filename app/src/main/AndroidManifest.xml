@@ -25,7 +25,14 @@
         <activity android:name=".IntentActivity" />
         <activity android:name=".exam.Main2Activity" />
         <activity android:name=".exam_webView.WebViewActivity" />
-        <activity android:name=".exam_listView.ListViewActivity"></activity>
+        <activity android:name=".exam_listView.ListViewActivity" />
+        <activity
+            android:name=".exam_lifeCycle.LifeCycleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".exam_fab_dialog.FabAndDialogActivity" />
+        <activity android:name=".baseAdapter_prac.BaseAdapter_pracActivity" />
+        <activity android:name=".baseAdapter_prac.BaseAdapter_pracActivity2" />
+        <activity android:name=".exam_fragment.FragmentExamActivity"></activity>
     </application>
 
 </manifest>

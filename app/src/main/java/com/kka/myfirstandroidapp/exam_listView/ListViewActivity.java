@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
     private ArrayAdapter<String> mAdapter;
     private GridView mGridView;
     private Spinner mSpinner;
+    private SimpleAdapter mSimpleAdapter;
+    private MyAdapter mMyAdapter;
 
 
     @Override
@@ -44,7 +47,26 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
                 android.R.layout.simple_list_item_1,
                 mdata);
 
+//        mSimpleAdapter = new SimpleAdapter(this,
+//                mSimpleData,
+//                android.R.layout.simple_list_item_2,
+//                new String[] {"title","description"},
+//                new int[] {android.R.id.text1, android.R.id.text2});
 
+        //MyData
+        List<MyItem> myData = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            if(i%3 ==0){
+                myData.add(new MyItem(R.drawable.aa, "미소녀"+i+"정말\n 정말\n","예쁜"));
+
+            }else {
+                myData.add(new MyItem(R.drawable.kdw, "미소녀"+i+"정말\n 정말\n","예쁜"));
+
+            }
+        }
+
+
+        mMyAdapter = new MyAdapter(this,myData);
         mListView.setAdapter(mAdapter);
         mGridView.setAdapter(mAdapter);
         mSpinner.setAdapter(mAdapter);
@@ -77,8 +99,7 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        mdata.remove(position);
-        mAdapter.notifyDataSetChanged();
+
     }
 
     @Override

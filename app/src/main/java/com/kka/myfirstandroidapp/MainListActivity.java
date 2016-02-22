@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.kka.myfirstandroidapp.baseAdapter_prac.BaseAdapter_pracActivity;
 import com.kka.myfirstandroidapp.exam.Main2Activity;
+import com.kka.myfirstandroidapp.exam_fab_dialog.FabAndDialogActivity;
+import com.kka.myfirstandroidapp.exam_fragment.FragmentExamActivity;
+import com.kka.myfirstandroidapp.exam_lifeCycle.LifeCycleActivity;
 import com.kka.myfirstandroidapp.exam_listView.ListViewActivity;
 import com.kka.myfirstandroidapp.exam_webView.WebViewActivity;
 
@@ -56,6 +60,11 @@ public class MainListActivity extends ListActivity {
         addItem(myData, "커피주문", Main2Activity.class);
         addItem(myData, "webView 예제", WebViewActivity.class);
         addItem(myData, "listView 예제", ListViewActivity.class);
+        addItem(myData, "생명주기 연습", LifeCycleActivity.class);
+        addItem(myData, "플로팅 다이얼로그 연습", FabAndDialogActivity.class);
+        addItem(myData, "베이스어댑터 연습", BaseAdapter_pracActivity.class);
+        addItem(myData, "fragment", FragmentExamActivity.class);
+
 
         // ----- 메뉴 추가 여기까지
 

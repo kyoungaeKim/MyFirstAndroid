@@ -36,6 +36,8 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.naver.com"));
                 if(intent.resolveActivity(getPackageManager())!= null) {
+                //그 인텐트를 처리할수 있는 액티비티가 있는지 확인하는 메소드
+
                     startActivity(intent);
                 }
 
